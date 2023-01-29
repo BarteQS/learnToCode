@@ -17,21 +17,25 @@
     <div class="product__signup">
       <p class="product__trial"><span class="bolder">Try it free 7 days</span> then $20/mo. thereafter</p>
       <div class="product__form-place">
-        <form class="product__form" action="" method="post">
+        <form class="product__form" action="" method="post" name="productForm">
           <label class="sr-only" for="first-name">First Name</label>
-          <input type="text" name="first-name" id="first-name" placeholder="First Name">
+          <input type="text" name="firstName" id="first-name" placeholder="First Name" required>
+          <span class="error first-name" aria-live="polite"></span>
           <label class="sr-only" for="last-name">Last Name</label>
-          <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+          <input type="text" name="lastName" id="last-name" placeholder="Last Name" required>
+          <span class="error last-name" aria-live="polite"></span>
           <label class="sr-only" for="email">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="Email Address">
+          <input type="email" name="email" id="email" placeholder="Email Address" required>
+          <span class="error email" aria-live="polite"></span>
           <label class="sr-only" for="password">Password</label>
-          <input class="password" type="password" name="password" id="password" placeholder="Password">
+          <input class="password" type="password" name="password" id="password" placeholder="Password" required>
+          <span class="error password" aria-live="polite"></span>
           <input class="submit" type="submit" value="CLAIM YOUR FREE TRIAL">
         </form>
         <p class="privacy-info">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </div>
     </div>
   </main>
-  <script src="./src/app.js"></script> 
+  <script src="./src/app.js"></script>
 </body>
 </html>
