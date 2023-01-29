@@ -104,4 +104,119 @@ body {
     background-color: var(--clr-red-300);
     background-image: url(./images/bg-intro-mobile.png);
     font-family: var(--ff-main);
+    font-weight: var(--fw-regular);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 0 1.2rem;
+    padding-top: 4.5rem;
+}
+
+.product__title {
+    color: #fff;
+    font-size: 1.75rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.018rem;
+    line-height: 2.25rem;
+    text-align: center;
+}
+
+.product__text {
+    color: #fff;
+    font-weight: var(--fw-medium);
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 .5rem;
+    line-height: 1.625rem;
+}
+
+.product__signup {
+    margin: 2.75rem 0;
+}
+
+.product__trial {
+    background-color: var(--clr-blue-500);
+    border-radius: .5rem;
+    color: #fff;
+    font-size: 0.938rem;
+    line-height: 1.625rem;
+    text-align: center;
+    width: 100%;
+    padding: 1.2rem 4rem;
+    letter-spacing: 0.017rem;
+}
+
+.bolder {
+    font-weight: var(--fw-bold);
+}
+
+.product__form-place {
+    background-color: #fff;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1.3rem 1.8rem;
+    
+}
+
+.product__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input:not([class="submit"]) {
+    margin-bottom: 1.3rem;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+::placeholder {
+    font-weight: var(--fw-semibold);
+    letter-spacing: .016rem;
+    line-height: 1.625rem;
+}
+
+input[class="submit"] {
+    border: 0;
+    border-radius: .5rem;
+    color: #fff;
+    font-weight: var(--fw-semibold);
+    background-color: var(--clr-green-300);
+    padding: 1rem;
+    width: 100%;
+}
+
+.privacy-info {
+    color: var(--clr-grayish-blur-100);
+    font-size: .688rem;
+    font-weight: var(--fw-medium);
+    line-height: 1.313rem;
+    margin-top: .8rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.privacy-info a {
+    text-decoration: none;
+    color: var(--clr-red-300);
+    font-weight: var(--fw-bold);
+}
+
+@media (min-width: 1024px) {
+    main {
+        flex-direction: row;
+    }
 }
